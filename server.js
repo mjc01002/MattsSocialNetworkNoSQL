@@ -11,12 +11,19 @@ app.use(express.static('public'));
 
 app.use(require('./routes'));
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/socialNetwork', {
+// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/socialNetwork', {
 
-  useNewUrlParser: true,
-  useUnifiedTopology: true
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true
+// });
+
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/socialNetwork', function (err) {
+  console.log('connected to mongodb')
 });
 
 mongoose.set('debug', true);
 
+console.log(mongoose.connection.readyState);
+
 app.listen(PORT, () => console.log(`Connected to port 3001`));
+
