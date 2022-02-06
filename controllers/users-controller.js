@@ -10,6 +10,7 @@ const usersController = {
         .then(dbUsersData => res.json(dbUsersData))
         .catch(err => res.status(400).json(err));
     },
+    
 
     
     getAllUsers(req, res) {
