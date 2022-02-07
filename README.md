@@ -1,7 +1,7 @@
 # MattsSocialNetworkNoSQL
 
 ## Description
-This is an application that allows the user to create users and manage their users' thoughts and reactions.
+This is a social network application that uses Mongodb and Express to be able to create users, create thoughts on users, create reactions on throughts, and add friends to users.  
 
 ## Usage
 Run npm install and then npm run start
