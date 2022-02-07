@@ -10,6 +10,7 @@ Run npm install and then npm run start
 https://github.com/mjc01002
 
 ## Media
+### Screenshot
 ![Image of Website](https://github.com/mjc01002/MattsSocialNetworkNoSQL/blob/main/NOSQL.PNG?raw=true)
 
 ### Video Walkthrough
